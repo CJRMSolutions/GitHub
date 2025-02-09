@@ -11,7 +11,7 @@
   <body>
     <header>
       <nav id="desktop-nav" role="navigation" aria-label="Main Navigation">
-        <div class="logo">Caro rocha</div>
+        <img src="/1.Dev Environment/Website - Personal/img/CaroRocha-removebg-preview.png" alt="Caro Rocha Logo" style="width: 120px; height: 70px;">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -20,7 +20,9 @@
         </ul>
       </nav>
       <nav id="hamburger-nav" role="navigation" aria-label="Mobile Navigation">
-        <div class="logo">Caro Rocha</div>
+        <div class="logo">
+          <img src="/1.Dev Environment/Website - Personal/img/CaroRocha-removebg-preview.png" alt="Caro Rocha Logo" style="width: 120px; height: 70px;">
+        </div>
         <div class="hamburger-menu">
           <div class="hamburger-icon" onclick="toggleMenu()">
             <span></span>
@@ -106,15 +108,13 @@
             </div>
             <div class="text-container">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim,
-                iusto. Praesentium blanditiis corporis reiciendis ipsum quasi
-                earum aut nulla rerum ab eum veritatis unde fugiat repellendus
-                beatae ducimus minus autem aspernatur doloremque incidunt quia,
-                vitae laborum ex. Dolor aut, nostrum porro veritatis optio,
-                facilis vel ea repudiandae eligendi mollitia, ipsam corporis
-                sapiente! Quas, asperiores consequatur at dignissimos doloribus
-                tempore exercitationem. Sed laboriosam, optio aliquam natus
-                cupiditate ullam.
+                Hi, I’m a junior developer passionate about crafting user-focused solutions that enhance digital experiences. With a strong foundation in front-end and back-end development, I specialize in HTML, CSS, JavaScript, Node.js, and MySQL, ensuring seamless and efficient web applications.
+
+Beyond development, I have a solid background in data analytics, leveraging Power BI, SQL, and Python to drive data-driven decisions. My expertise in forecasting models and resource optimization helps businesses efficiently allocate resources while maintaining optimal labor utilization.
+
+I’m also highly focused on workload automation, eliminating repetitive tasks and implementing smart prompts that empower employees to focus on what truly matters. By blending technology and automation, I create solutions that boost efficiency, scalability, and innovation.
+
+Let’s build something great together! 🚀
               </p>
             </div>
           </div>
@@ -230,7 +230,7 @@
               <div class="article-container">
                 <img
                   class="project-img"
-                  src="img/project-1.png"
+                  src="/1.Dev Environment/Website - Personal/img/WebNac.jpg"
                   alt="project-1"
                 />
               </div>
@@ -240,8 +240,7 @@
                 </button>
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://linkedin.com/';"
-                >
+                  onclick="location.href='https://cjrmsolutions.github.io/NacatamalesMinguito/';"                >
                   Live Demo
                 </button>
               </div>
@@ -295,8 +294,23 @@
       <section id="contact">
         <p class="section__text__p1">Get In Touch</p>
         <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
+        <div class="contact-form-container">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
             <img
               src="img/email.png"
               class="icon contact-icon"
